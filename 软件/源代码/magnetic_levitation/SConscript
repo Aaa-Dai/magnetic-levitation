@@ -1,0 +1,17 @@
+import rtconfig
+import os
+from building import *
+
+cwd = GetCurrentDir()
+path = [cwd]
+
+
+src = Split('''
+magnetic_levitation.c
+''')
+
+
+group = DefineGroup('modules/magnetic_levitation', src, depend = [''], CPPPATH = path)
+
+
+Return('group')

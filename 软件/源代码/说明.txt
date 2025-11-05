@@ -1,0 +1,5 @@
+本代码根据RT-Thread操作系统风格编写，可直接移植到RT-Thread工程上，使用的RT-Thread操作系统的dsp工程涉及到一些不便透露的内容，所以就没有附带开源，这里深感抱歉。我将磁悬浮功能实现的源码公开，相信作为资深工程师或者未来将成为资深工程师的你，一定可以理解代码内容并移植到其他的工程上。
+
+magnetic_levitation.c：磁悬浮功能实现，对GPIO、ADC、PWM、UART、TIMER外设的初始化，电磁线圈驱动函数实现，以及PID控制实现，重要数据的打印和vofa建图数据输出。
+magnetic_levitation.h：GPIO、ADC、PWM、UART、TIMER等外设的宏定义和各类参数的宏定义。
+main.c：LED灯驱动。
